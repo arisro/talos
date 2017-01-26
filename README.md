@@ -6,6 +6,7 @@
 
 [![Build Status](https://travis-ci.org/arisro/talos.svg?branch=master)](https://travis-ci.org/arisro/talos)
 [![Coverage Status](https://coveralls.io/repos/arisro/talos/badge.svg?branch=master&service=github)](https://coveralls.io/github/arisro/talos?branch=master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/arisro/talos)](https://goreportcard.com/report/github.com/arisro/talos)
 
 ---
 
