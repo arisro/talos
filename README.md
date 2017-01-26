@@ -1,6 +1,6 @@
 # Talos
 
-[![Join the chat at https://gitter.im/talos](https://img.shields.io/badge/join-chat-00cc99.svg)](https://gitter.im/talos?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/go-talos](https://img.shields.io/badge/join-chat-00cc99.svg)](https://gitter.im/go-talos?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Follow twitter](https://img.shields.io/badge/follow-twitter-00cc99.svg)](https://twitter.com/arisro)
 [![Follow GitHub](https://img.shields.io/badge/follow-github-00cc99.svg)](https://github.com/arisro)
 
