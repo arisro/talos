@@ -1,1 +1,7 @@
-.idea
+.idea/
+.DS_Store
+vendor/
+cover.out
+output/
+coverage.*
+config.yml
