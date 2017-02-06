@@ -6,7 +6,7 @@ import (
 )
 
 type Config struct {
-	LogLevel	string
+	LogLevel string
 }
 
 func Load() {

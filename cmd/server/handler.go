@@ -2,13 +2,14 @@ package server
 
 import (
 	"fmt"
-	"github.com/spf13/cobra"
-	"github.com/julienschmidt/httprouter"
-	"github.com/urfave/negroni"
-	"github.com/meatballhat/negroni-logrus"
 	"net/http"
 	"time"
+
 	"github.com/Sirupsen/logrus"
+	"github.com/julienschmidt/httprouter"
+	"github.com/meatballhat/negroni-logrus"
+	"github.com/spf13/cobra"
+	"github.com/urfave/negroni"
 )
 
 func StartServer() func(cmd *cobra.Command, args []string) {
@@ -24,9 +25,9 @@ func StartServer() func(cmd *cobra.Command, args []string) {
 		n.UseHandler(router)
 
 		var srv = http.Server{
-			Addr: "127.0.0.1:5255",
-			Handler: n,
-			ReadTimeout: time.Second * 5,
+			Addr:         "127.0.0.1:5255",
+			Handler:      n,
+			ReadTimeout:  time.Second * 5,
 			WriteTimeout: time.Second * 10,
 		}
 

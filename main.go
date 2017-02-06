@@ -1,9 +1,9 @@
 package main
 
 import (
+	"github.com/Sirupsen/logrus"
 	"github.com/arisro/talos/cmd"
 	"github.com/spf13/viper"
-	"github.com/Sirupsen/logrus"
 )
 
 func main() {
@@ -33,5 +33,5 @@ func main() {
 		break
 	}
 
-	cmd.Execute();
+	cmd.Execute()
 }
