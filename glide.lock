@@ -1,5 +1,5 @@
-hash: 0121c4df6c5eb82ded3572f831d29eebdc489ead14734efbca135b1c993d4221
-updated: 2017-01-26T16:34:40.950427371+02:00
+hash: bc3abc36e05479e205a07ecc4e1e4e2b130cc822acea287f4670a9c9e0297d39
+updated: 2017-02-06T21:59:34.584102977+02:00
 imports:
 - name: github.com/dgrijalva/jwt-go
   version: d2709f9f1f31ebcda9651b03077758c1f3a0018c
@@ -22,6 +22,10 @@ imports:
   - json/token
 - name: github.com/inconshreveable/mousetrap
   version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
+- name: github.com/jmoiron/sqlx
+  version: f980a91bdc37abef88269b8f122d7de6352102f5
+  subpackages:
+  - reflectx
 - name: github.com/julienschmidt/httprouter
   version: 8c199fb6259ffc1af525cc3ad52ee60ba8359669
 - name: github.com/magiconair/properties
@@ -34,6 +38,8 @@ imports:
   version: df1e16fde7fc330a0ca68167c23bf7ed6ac31d6d
 - name: github.com/pelletier/go-toml
   version: a1f048ba24490f9b0674a67e1ce995d685cddf4a
+- name: github.com/pkg/errors
+  version: 645ef00459ed84a119197bfb8d8205042c6df63d
 - name: github.com/Sirupsen/logrus
   version: d26492970760ca5d33129d2d799e34be5c4782eb
 - name: github.com/spf13/afero

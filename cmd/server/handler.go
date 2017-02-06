@@ -1,11 +1,11 @@
 package server
 
 import (
-	"fmt"
 	"net/http"
 	"time"
 
 	"github.com/Sirupsen/logrus"
+	"github.com/arisro/talos/config"
 	"github.com/julienschmidt/httprouter"
 	"github.com/meatballhat/negroni-logrus"
 	"github.com/spf13/cobra"
@@ -14,8 +14,6 @@ import (
 
 func StartServer() func(cmd *cobra.Command, args []string) {
 	return func(cmd *cobra.Command, args []string) {
-		fmt.Println("starting server")
-
 		router := httprouter.New()
 		serverHandler := &Handler{}
 		serverHandler.registerRoutes(router)
@@ -41,8 +39,14 @@ func StartServer() func(cmd *cobra.Command, args []string) {
 }
 
 type Handler struct {
+	Config *config.Config
 }
 
 func (h *Handler) registerRoutes(router *httprouter.Router) {
+	// c := h.Config
+	// ctx := c.Context
 
+	router.GET("/health", func(rw http.ResponseWriter, r *http.Request, _ httprouter.Params) {
+		rw.WriteHeader(http.StatusNoContent)
+	})
 }
